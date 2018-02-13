@@ -26,19 +26,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String salida ="";
                 int resultado;
-                valor.setText("");
+
 
                 String valor1 = valor.getText().toString();
                 int tabla = Integer.parseInt(valor1);
 
                 for(int i=0; i<=20;i++){
                     resultado = tabla*i;
-                    salida += tabla+"x"+i+"="+resultado;
+                    salida += tabla+"x"+i+"="+resultado+"\n";
 
-                    result.setText("\n"+salida);
+
 
                 }
-
+                result.setText(salida);
 
 
             }
